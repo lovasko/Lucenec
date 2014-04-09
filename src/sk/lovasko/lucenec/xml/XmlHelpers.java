@@ -1,4 +1,4 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.xml;
 
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;

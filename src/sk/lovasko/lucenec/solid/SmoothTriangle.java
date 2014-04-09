@@ -1,5 +1,7 @@
 package sk.lovasko.lucenec;
 
+import sk.lovasko.lucenec.xml;
+
 public final class SmoothTriangle extends Triangle
 {
 	private final Vector normal1;

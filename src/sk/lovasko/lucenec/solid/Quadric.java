@@ -1,5 +1,7 @@
 package sk.lovasko.lucenec;
 
+import sk.lovasko.lucenec.xml;
+
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;

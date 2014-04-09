@@ -1,5 +1,7 @@
 package sk.lovasko.lucenec;
 
+import sk.lovasko.lucenec.xml;
+
 public class Instance extends Solid 
 {
 	private Matrix matrix;

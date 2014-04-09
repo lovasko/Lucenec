@@ -1,5 +1,7 @@
 package sk.lovasko.lucenec;
 
+import sk.lovasko.lucenec.xml;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashSet;

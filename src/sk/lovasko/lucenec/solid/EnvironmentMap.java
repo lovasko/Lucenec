@@ -1,5 +1,7 @@
 package sk.lovasko.lucenec;
 
+import sk.lovasko.lucenec.xml;
+
 public final class EnvironmentMap extends Solid
 {
 	public EnvironmentMap (final String image)
