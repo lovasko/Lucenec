@@ -22,16 +22,7 @@ public final class CosineIntegrator extends Integrator
 					ray.get_direction().normalize(), 
 					intersection.get_normal().normalize());
 
-/*			System.out.println(intersection.get_solid());
-			return intersection.
-			 get_solid().
-			 get_material().
-			 get_emission(
-				intersection.get_hit_point(), 
-				intersection.get_normal(), 
-				ray.get_direction())
-			.multiply_scalar(Math.abs(cosine)); 
-			*/return new RGB(Math.abs(cosine));
+			return new RGB(Math.abs(cosine));
 		}
 		else
 		{
