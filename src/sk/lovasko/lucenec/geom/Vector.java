@@ -204,10 +204,43 @@ public final class Vector implements Serializable
 	}
 
 	public Vector divide_scalar (double scalar)
-	{
+	InfinitePlane{
 		return new Vector(x / scalar,
 		                  y / scalar, 
 		                  z / scalar); 
+	}
+
+	public final Vector rotate (final Vector axis, final double angle)
+	{
+      final Vector an = axis.normalize();
+			final double s = Math.sin(angle);
+			final double c = Math.cos(angle);
+			final double cn = 1.0 - c;
+			final double ax = axis.get_x();
+			final double ay = axis.get_y();
+			final double az = axis.get_z();
+
+      final Vector r1 = new Vector(
+				ax * ax * cn + c,
+				ax * ay * cn - az * s,
+				ax * az * cn + ay * s);
+
+      final Vector r2 = new Vector(
+				ay * ax * cn + az * s,
+				ay * ay * cn + c,
+				ay * az * cn - ax * s);
+
+      final Vector r3 = new Vector(
+				az * ax * cn - ay * s,
+				az * ay * cn + ax * s,
+				az * az * cn + c);
+
+      final double rx = Vector.dot_product(this, r1);
+      final double ry = Vector.dot_product(this, r2);
+      final double rz = Vector.dot_product(this, r3);
+
+      final Vector result = new Vector(rx, ry, rz);
+      return result.normalize();
 	}
 
 	public Point to_point ()
