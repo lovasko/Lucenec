@@ -1,10 +1,12 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.image;
 
-import javax.imageio.ImageIO;
 import java.awt.Color;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Size;
 
 public final class Image
 {

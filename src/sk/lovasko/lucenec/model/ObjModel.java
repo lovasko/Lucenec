@@ -1,4 +1,10 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.model;
+
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.math.Double2;
+import sk.lovasko.lucenec.math.Int3;
+import sk.lovasko.lucenec.solid.Solid;
+import sk.lovasko.lucenec.solid.Triangle;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -59,7 +65,7 @@ public final class ObjModel extends Model
 
 	private ObjModel() { }
 
-	ObjModel (final String _filename)
+	public ObjModel (final String _filename)
 	{
 		vertices = new ArrayList<Point>();
 		normals = new ArrayList<Point>();

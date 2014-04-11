@@ -1,4 +1,6 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.render;
+
+import sk.lovasko.lucenec.image.Image;
 
 public final class Result
 {

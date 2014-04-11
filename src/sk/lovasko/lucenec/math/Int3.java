@@ -1,11 +1,11 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.math;
 
 public final class Int3
 {
 	private int[] data;
 	private boolean[] present;
 
-	Int3 () 
+	public Int3 () 
 	{ 
 		data = new int[3];
 		present = new boolean[3];
@@ -15,7 +15,7 @@ public final class Int3
 		set_presence(2, false);
 	}
 
-	Int3 (final int a, final int b, final int c)
+	public Int3 (final int a, final int b, final int c)
 	{
 		data = new int[3];
 		present = new boolean[3];

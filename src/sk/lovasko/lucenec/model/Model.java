@@ -1,4 +1,7 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.model;
+
+import sk.lovasko.lucenec.solid.Solid;
+import sk.lovasko.lucenec.group.Group;
 
 import java.io.Serializable;
 import java.util.ArrayList;

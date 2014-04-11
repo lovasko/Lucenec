@@ -1,6 +1,16 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.solid;
 
-import sk.lovasko.lucenec.xml;
+import sk.lovasko.lucenec.xml.XmlHelpers;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.geom.BoundingBox;
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.material.FlatMaterial;
+import sk.lovasko.lucenec.texture.ImageTexture;
+import sk.lovasko.lucenec.math.Interpolation;
+import sk.lovasko.lucenec.texture.BorderHandling;
+import sk.lovasko.lucenec.mapper.EnvironmentalCoordinateMapper;
 
 public final class EnvironmentMap extends Solid
 {

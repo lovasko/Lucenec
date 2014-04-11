@@ -1,4 +1,6 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.storyline;
+
+import sk.lovasko.lucenec.math.Matrix;
 
 public abstract class Transformation
 {

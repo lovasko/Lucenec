@@ -1,4 +1,9 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.material;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.math.Matrix;
 
 public final class FuzzyMirrorMaterial implements Material
 {

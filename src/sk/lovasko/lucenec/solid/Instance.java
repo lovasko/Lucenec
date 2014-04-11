@@ -1,6 +1,14 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.solid;
 
-import sk.lovasko.lucenec.xml;
+import sk.lovasko.lucenec.Primitive;
+import sk.lovasko.lucenec.xml.XmlHelpers;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.geom.BoundingBox;
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.math.Matrix;
+import sk.lovasko.lucenec.math.Double4;
 
 public class Instance extends Solid 
 {
@@ -9,7 +17,7 @@ public class Instance extends Solid
 	private final Primitive primitive;
 	private BoundingBox bounding_box;
 
-	Instance (final Primitive _primitive)
+	public Instance (final Primitive _primitive)
 	{
 		matrix = Matrix.identity();
 		inverse = Matrix.identity();

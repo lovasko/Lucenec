@@ -1,4 +1,10 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.render;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.geom.Size;
+import sk.lovasko.lucenec.image.Image;
+import sk.lovasko.lucenec.integrator.Integrator;
 
 import java.util.concurrent.Callable;
 

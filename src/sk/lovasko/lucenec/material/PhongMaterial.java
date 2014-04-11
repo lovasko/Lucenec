@@ -1,4 +1,9 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.material;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.texture.Texture;
 
 public final class PhongMaterial implements Material
 {

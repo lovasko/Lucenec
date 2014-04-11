@@ -1,11 +1,11 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.geom;
 
-class Ray
+public class Ray
 {
 	private Point origin;
 	private Vector direction;
 
-	Ray (Point o, Vector d)
+	public Ray (Point o, Vector d)
 	{
 		origin = o;
 		direction = d;

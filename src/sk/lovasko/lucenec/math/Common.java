@@ -1,4 +1,4 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.math;
 
 public final class Common
 {

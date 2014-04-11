@@ -1,6 +1,8 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.geom;
 
-class Intersection
+import sk.lovasko.lucenec.solid.Solid;
+
+public class Intersection
 {
 	private Ray ray;
 	private Solid solid;

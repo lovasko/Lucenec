@@ -1,4 +1,8 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.integrator;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.world.World;
+import sk.lovasko.lucenec.geom.Ray;
 
 public abstract class Integrator
 {

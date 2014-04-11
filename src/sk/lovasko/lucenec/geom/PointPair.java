@@ -1,4 +1,4 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.geom;
 
 // TODO make this final immutable class
 public final class PointPair
@@ -6,7 +6,7 @@ public final class PointPair
 	private Point first;
 	private Point second;
 
-	PointPair (Point _first, Point _second)
+	public PointPair (Point _first, Point _second)
 	{
 		first = _first;
 		second = _second;

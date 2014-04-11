@@ -1,6 +1,7 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.geom;
 
 import java.io.Serializable;
+import sk.lovasko.lucenec.IntersectionPair;
 
 public final class BoundingBox implements Serializable
 {
@@ -8,7 +9,7 @@ public final class BoundingBox implements Serializable
 	private final Point max;
 	private SizeType size_type;
 
-	BoundingBox (final Point p1, final Point p2)
+	public BoundingBox (final Point p1, final Point p2)
 	{
 		if (p1 != null && p2 != null)
 		{
@@ -24,7 +25,7 @@ public final class BoundingBox implements Serializable
 		size_type = SizeType.NORMAL;
 	}
 
-	BoundingBox (BoundingBox bounding_box)
+	public BoundingBox (BoundingBox bounding_box)
 	{
 		min = new Point(bounding_box.get_min());
 		max = new Point(bounding_box.get_max());

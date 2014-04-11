@@ -1,11 +1,14 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.math;
+
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
 
 public final class Double2
 {
 	private final double a;
 	private final double b;
 
-	Double2 (final double _a, final double _b)
+	public Double2 (final double _a, final double _b)
 	{
 		a = _a;
 		b = _b;

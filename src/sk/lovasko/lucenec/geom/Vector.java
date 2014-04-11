@@ -1,4 +1,6 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.geom;
+
+import sk.lovasko.lucenec.math.Double4;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -10,24 +12,24 @@ public final class Vector implements Serializable
 	private double y;
 	private double z;
 
-	Vector (double x, double y, double z)
+	public Vector (double x, double y, double z)
 	{
 		set_all_components(x, y, z); 	
 	}
 
-	Vector (double xyz)
+	public Vector (double xyz)
 	{
 		set_all_components(xyz);
 	}
 
-	Vector (Vector vector)
+	public Vector (Vector vector)
 	{
 		x = vector.get_x();
 		y = vector.get_y();
 		z = vector.get_z();
 	}
 
-	Vector (final Double4 double4)
+	public Vector (final Double4 double4)
 	{
 		x = double4.get_x();
 		y = double4.get_y();

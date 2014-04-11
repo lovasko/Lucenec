@@ -1,4 +1,4 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.group;
 
 public enum Axis
 {

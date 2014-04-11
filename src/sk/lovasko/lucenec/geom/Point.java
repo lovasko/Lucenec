@@ -1,8 +1,9 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.geom;
 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 import java.io.Serializable;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import sk.lovasko.lucenec.math.Double4;
 
 public final class Point implements Serializable
 {
@@ -10,24 +11,24 @@ public final class Point implements Serializable
 	private double y;
 	private double z;
 
-	Point (final double x, final double y, final double z)
+	public Point (final double x, final double y, final double z)
 	{
 		set_all_components(x, y, z);
 	}
 
-	Point (final double xyz)
+	public Point (final double xyz)
 	{
 		set_all_components(xyz);
 	}
 
-	Point (final Point point)
+	public Point (final Point point)
 	{
 		set_all_components(point.get_x(), 
 		                   point.get_y(), 
 		                   point.get_z());
 	}
 
-	Point (final Double4 double4)
+	public Point (final Double4 double4)
 	{
 		set_all_components(double4.get_x(), 
 		                   double4.get_y(), 

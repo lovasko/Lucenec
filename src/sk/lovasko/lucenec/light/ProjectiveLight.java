@@ -1,4 +1,9 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.light;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.texture.Texture;
 
 public final class ProjectiveLight implements Light
 {

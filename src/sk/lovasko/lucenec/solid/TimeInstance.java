@@ -1,4 +1,17 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.solid;
+
+import sk.lovasko.lucenec.Primitive;
+import sk.lovasko.lucenec.storyline.Transformation;
+import sk.lovasko.lucenec.storyline.TranslateTransformation;
+import sk.lovasko.lucenec.storyline.TimeDistribution;
+import sk.lovasko.lucenec.math.Matrix;
+import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.geom.BoundingBox;
+import sk.lovasko.lucenec.material.Material;
+import sk.lovasko.lucenec.mapper.CoordinateMapper;
 
 import java.util.List;
 import java.util.ArrayList;

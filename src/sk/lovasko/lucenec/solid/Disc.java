@@ -1,6 +1,11 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.solid;
 
-import sk.lovasko.lucenec.xml;
+import sk.lovasko.lucenec.xml.XmlHelpers;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.geom.BoundingBox;
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Ray;
 
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;

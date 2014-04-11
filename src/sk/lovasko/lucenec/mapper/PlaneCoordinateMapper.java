@@ -1,4 +1,10 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.mapper;
+
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.math.Double4;
+import sk.lovasko.lucenec.math.Matrix;
 
 public final class PlaneCoordinateMapper implements CoordinateMapper
 {

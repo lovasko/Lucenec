@@ -1,4 +1,7 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.math;
+
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
 
 public final class Double4
 {
@@ -7,7 +10,7 @@ public final class Double4
 	private final double z;
 	private final double w;
 
-	Double4 (final Point point)
+	public Double4 (final Point point)
 	{
 		x = point.get_x();
 		y = point.get_y();
@@ -15,7 +18,7 @@ public final class Double4
 		w = 1.0;
 	}
 
-	Double4 (final Vector vector)
+	public Double4 (final Vector vector)
 	{
 		x = vector.get_x();
 		y = vector.get_y();
@@ -23,7 +26,7 @@ public final class Double4
 		w = 0.0;
 	}
 
-	Double4 (
+	public Double4 (
 		final double x,
 		final double y,
 		final double z,
@@ -35,7 +38,7 @@ public final class Double4
 		this.w = w;
 	}
 
-	Double4 (final double xyzw)
+	public Double4 (final double xyzw)
 	{
 		x = xyzw;
 		y = xyzw;

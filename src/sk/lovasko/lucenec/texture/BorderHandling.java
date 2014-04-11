@@ -1,4 +1,7 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.texture;
+
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Size;
 
 // TODO introduce Point2D
 public enum BorderHandling

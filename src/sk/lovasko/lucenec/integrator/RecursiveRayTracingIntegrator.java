@@ -1,4 +1,14 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.integrator;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.light.Light;
+import sk.lovasko.lucenec.light.LightHit;
+import sk.lovasko.lucenec.material.SampleReflectance;
+import sk.lovasko.lucenec.material.Sampling;
+import sk.lovasko.lucenec.world.World;
 
 public final class RecursiveRayTracingIntegrator extends Integrator
 {

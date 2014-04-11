@@ -1,4 +1,7 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.texture;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Point;
 
 public final class CheckerboardTexture implements Texture
 {

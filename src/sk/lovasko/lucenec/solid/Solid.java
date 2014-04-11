@@ -1,8 +1,14 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.solid;
 
 import java.io.Serializable;
+import sk.lovasko.lucenec.Primitive;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.geom.BoundingBox;
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Ray;
 
-abstract class Solid extends Primitive implements Serializable
+public abstract class Solid extends Primitive implements Serializable
 {
 	public abstract double get_area();
 

@@ -1,5 +1,35 @@
 package sk.lovasko.lucenec;
 
+import sk.lovasko.lucenec.camera.Camera;
+import sk.lovasko.lucenec.camera.PerspectiveCamera;
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Size;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.group.Group;
+import sk.lovasko.lucenec.group.KDTree;
+import sk.lovasko.lucenec.group.SimpleGroup;
+import sk.lovasko.lucenec.integrator.CosineIntegrator;
+import sk.lovasko.lucenec.integrator.Integrator;
+import sk.lovasko.lucenec.light.PointLight;
+import sk.lovasko.lucenec.mapper.CoordinateMapper;
+import sk.lovasko.lucenec.mapper.WorldCoordinateMapper;
+import sk.lovasko.lucenec.material.GlassMaterial;
+import sk.lovasko.lucenec.material.LambertianMaterial;
+import sk.lovasko.lucenec.material.Material;
+import sk.lovasko.lucenec.material.MirrorMaterial;
+import sk.lovasko.lucenec.material.PhongMaterial;
+import sk.lovasko.lucenec.model.ObjModel;
+import sk.lovasko.lucenec.render.RenderSettings;
+import sk.lovasko.lucenec.render.Renderer;
+import sk.lovasko.lucenec.solid.InfinitePlane;
+import sk.lovasko.lucenec.solid.Instance;
+import sk.lovasko.lucenec.solid.TimeInstance;
+import sk.lovasko.lucenec.solid.Quad;
+import sk.lovasko.lucenec.storyline.SquareTimeDistribution;
+import sk.lovasko.lucenec.texture.ConstantTexture;
+import sk.lovasko.lucenec.world.World;
+
 public final class RenderingCompetition
 {
 	private static final void make_box (

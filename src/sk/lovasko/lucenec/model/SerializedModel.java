@@ -1,4 +1,6 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.model;
+
+import sk.lovasko.lucenec.solid.Solid;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

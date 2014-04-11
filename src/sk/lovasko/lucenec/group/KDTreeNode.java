@@ -1,4 +1,8 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.group;
+
+import sk.lovasko.lucenec.Primitive;
+import sk.lovasko.lucenec.geom.BoundingBox;
+import sk.lovasko.lucenec.geom.Point;
 
 import java.util.List;
 import java.util.ArrayList;

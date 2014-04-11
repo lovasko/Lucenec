@@ -1,6 +1,11 @@
 package sk.lovasko.lucenec;
 
 import java.io.Serializable;
+import sk.lovasko.lucenec.geom.BoundingBox;
+import sk.lovasko.lucenec.geom.Intersection;
+import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.mapper.CoordinateMapper;
+import sk.lovasko.lucenec.material.Material;
 
 public abstract class Primitive implements Serializable
 {
@@ -33,7 +38,7 @@ public abstract class Primitive implements Serializable
 		return coordinate_mapper;
 	}
 
-	protected void set_time (final double time)
+	public void set_time (final double time)
 	{
 		this.time = time;
 	}

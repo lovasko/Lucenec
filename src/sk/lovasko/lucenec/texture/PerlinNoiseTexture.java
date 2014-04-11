@@ -1,8 +1,12 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.texture;
+
+import java.util.ArrayList;
 
 import java.util.Collections;
-import java.util.ArrayList;
 import java.util.List;
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.math.Common;
 
 public final class PerlinNoiseTexture implements Texture
 {

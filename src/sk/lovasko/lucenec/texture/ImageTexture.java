@@ -1,4 +1,10 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.texture;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.image.Image;
+import sk.lovasko.lucenec.math.Common;
+import sk.lovasko.lucenec.math.Interpolation;
 
 public final class ImageTexture implements Texture 
 {

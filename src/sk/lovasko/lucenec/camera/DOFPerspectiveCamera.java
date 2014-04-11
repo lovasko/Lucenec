@@ -1,4 +1,8 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.camera;
+
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.geom.Ray;
 
 public final class DOFPerspectiveCamera implements Camera
 {

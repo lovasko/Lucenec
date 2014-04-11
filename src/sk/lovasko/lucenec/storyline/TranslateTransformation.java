@@ -1,4 +1,9 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.storyline;
+
+import sk.lovasko.lucenec.math.Matrix;
+import sk.lovasko.lucenec.math.Double4;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
 
 public final class TranslateTransformation extends Transformation
 {

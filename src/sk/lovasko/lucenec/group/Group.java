@@ -1,4 +1,8 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.group;
+
+import sk.lovasko.lucenec.Primitive;
+import sk.lovasko.lucenec.material.Material;
+import sk.lovasko.lucenec.mapper.CoordinateMapper;
 
 import java.util.List;
 
@@ -14,7 +18,7 @@ public abstract class Group extends Primitive
 		return primitives;
 	}
 
-	protected final void set_time (final double time)
+	public final void set_time (final double time)
 	{
 		this.time = time;
 

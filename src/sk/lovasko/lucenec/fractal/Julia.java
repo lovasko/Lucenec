@@ -1,6 +1,9 @@
 package sk.lovasko.lucenec;
 
-class Julia
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+
+public class Julia
 {
 	public static int MAX_ITER = 512;
 

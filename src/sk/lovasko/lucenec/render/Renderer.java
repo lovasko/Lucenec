@@ -1,4 +1,7 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.render;
+
+import sk.lovasko.lucenec.integrator.Integrator;
+import sk.lovasko.lucenec.image.Image;
 
 import java.util.List;
 import java.util.ArrayList;

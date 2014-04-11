@@ -1,6 +1,8 @@
 package sk.lovasko.lucenec;
 
 import java.io.File;
+import sk.lovasko.lucenec.model.ObjModel;
+import sk.lovasko.lucenec.model.SerializedModel;
 
 class Main
 {

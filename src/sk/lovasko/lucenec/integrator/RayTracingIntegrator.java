@@ -1,4 +1,15 @@
-package sk.lovasko.lucenec;
+package sk.lovasko.lucenec.integrator;
+
+import sk.lovasko.lucenec.color.RGB;
+import sk.lovasko.lucenec.geom.Point;
+import sk.lovasko.lucenec.geom.Vector;
+import sk.lovasko.lucenec.light.Light;
+import sk.lovasko.lucenec.light.LightHit;
+import sk.lovasko.lucenec.mapper.CoordinateMapper;
+import sk.lovasko.lucenec.mapper.EnvironmentalCoordinateMapper;
+import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.world.World;
+import sk.lovasko.lucenec.geom.Intersection;
 
 public final class RayTracingIntegrator extends Integrator
 {
