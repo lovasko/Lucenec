@@ -49,7 +49,7 @@ class Main
 			return;
 		}
 
-		RenderingCompetition.run();
+		MFF1.run();
 	}
 }
 
