@@ -80,5 +80,10 @@ public class Intersection
 	{
 		return local;
 	}
+
+	public String toString()
+	{
+		return (fail ? "Intersection: fail" : "Intersection: " + distance);
+	}
 }
 
