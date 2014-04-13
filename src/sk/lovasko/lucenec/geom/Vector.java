@@ -203,8 +203,8 @@ public final class Vector implements Serializable
 		                  z * scalar); 
 	}
 
-	public Vector divide_scalar (double scalar)
-	InfinitePlane{
+	public Vector divide_scalar (double scalar) 
+	{
 		return new Vector(x / scalar,
 		                  y / scalar, 
 		                  z / scalar); 
