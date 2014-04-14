@@ -5,6 +5,7 @@ import sk.lovasko.lucenec.geom.Vector;
 import sk.lovasko.lucenec.geom.BoundingBox;
 import sk.lovasko.lucenec.geom.Intersection;
 import sk.lovasko.lucenec.geom.Ray;
+import sk.lovasko.lucenec.math.Matrix;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -21,10 +22,10 @@ public final class Revolution extends Solid
 
 		if (values.get(1) < values.get(values.size()-1))
 		{
-			for (int i = 0; i < values.size()-2 ; i+=2)
+			for (int i = values.size()-1; i >= 0 ; i-=2)
 			{
-				values_copy.set(i+0, values.get(values.size()-i-1));
-				values_copy.set(i+1, values.get(values.size()-i-2));
+				values_copy.set(values.size()-i+0, values.get(i));
+				values_copy.set(values.size()-i-1, values.get(i-1));
 			}
 		}
 
@@ -39,7 +40,7 @@ public final class Revolution extends Solid
 			this.values.add(values_copy.get(i));
 		}
 
-		if (values_copy.get(values.size()-2) != 0.0)
+		if (this.values.get(this.values.size()-2) != 0.0)
 		{
 			this.values.add(0.0);
 			this.values.add(values_copy.get(values_copy.size()-1));
@@ -100,8 +101,7 @@ public final class Revolution extends Solid
 					if (t3 < best_distance)
 					{
 						result = new Intersection(ray, this, t3, get_normal(k,
-						ray.get_point(t3)), 
-						    ray.get_point(t3), null);
+						    ray.get_point(t3)), ray.get_point(t3), null);
 						best_distance = t3;
 					}
 				}
@@ -161,36 +161,38 @@ public final class Revolution extends Solid
 	private final Vector get_normal (int k, Point p)
 	{
 		Vector normal;
-		
 		final double phi = Math.atan2(p.get_y(), p.get_x());
-		
-		if (values.get(k+0) == values.get(k+2) && 
-		    values.get(k+1)  < values.get(k+3))
+
+		if (values.get(k+0).doubleValue() == values.get(k+2).doubleValue() && 
+		    values.get(k+1).doubleValue()  < values.get(k+3).doubleValue())
 		{
 			normal = new Vector(-1.0, 0.0, 0.0);
 		}
-		else if (values.get(k) == values.get(k+2))
+		else if (values.get(k+0).doubleValue() == values.get(k+2).doubleValue())
 		{ 
 			normal = new Vector(1.0, 0.0, 0.0);
 		}
-		else if (values.get(k+1) == values.get(k+3) && 
-		         values.get(k+0)  < values.get(k+2))
+		else if (values.get(k+1).doubleValue() == values.get(k+3).doubleValue() && 
+		         values.get(k+0).doubleValue()  < values.get(k+2).doubleValue())
 		{
 			normal = new Vector(0.0, 0.0, 1.0);
 		}
-		else if (values.get(k+1) == values.get(k+3))
+		else if (values.get(k+1).doubleValue() == values.get(k+3).doubleValue())
 		{
 			normal = new Vector(0.0, 0.0, -1.0);
 		}
 		else
 		{
-			double h = values.get(k+3) - values.get(k+1);
-			double r = values.get(k+2) - values.get(k);
+			double h = values.get(k+3).doubleValue() - values.get(k+1).doubleValue();
+			double r = values.get(k+2).doubleValue() - values.get(k+0).doubleValue();
 			normal = new Vector(-h, 0.0, r);
 		}
 
 		normal = normal.normalize();
 		normal = normal.rotate(new Vector(0.0, 0.0, 1.0), phi);
+
+		Matrix local = Matrix.local(normal);
+		normal = local.to_world(normal);
 
 		return normal;
 	}
