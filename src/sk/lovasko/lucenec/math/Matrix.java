@@ -430,5 +430,13 @@ public final class Matrix
 			new Double4(m[8],  m[9],  m[10], m[11]),
 			new Double4(m[12], m[13], m[14], m[15]));
 	}
+
+	public final Vector to_world (final Vector v)
+	{
+		return new Vector(
+			     a.multiply(v.get_x())
+			.add(b.multiply(v.get_y())
+			.add(c.multiply(v.get_z()))));
+	}
 }
 
