@@ -163,30 +163,9 @@ public final class Revolution extends Solid
 		Vector normal;
 		final double phi = Math.atan2(p.get_y(), p.get_x());
 
-		if (values.get(k+0).doubleValue() == values.get(k+2).doubleValue() && 
-		    values.get(k+1).doubleValue()  < values.get(k+3).doubleValue())
-		{
-			normal = new Vector(-1.0, 0.0, 0.0);
-		}
-		else if (values.get(k+0).doubleValue() == values.get(k+2).doubleValue())
-		{ 
-			normal = new Vector(1.0, 0.0, 0.0);
-		}
-		else if (values.get(k+1).doubleValue() == values.get(k+3).doubleValue() && 
-		         values.get(k+0).doubleValue()  < values.get(k+2).doubleValue())
-		{
-			normal = new Vector(0.0, 0.0, 1.0);
-		}
-		else if (values.get(k+1).doubleValue() == values.get(k+3).doubleValue())
-		{
-			normal = new Vector(0.0, 0.0, -1.0);
-		}
-		else
-		{
-			double h = values.get(k+3).doubleValue() - values.get(k+1).doubleValue();
-			double r = values.get(k+2).doubleValue() - values.get(k+0).doubleValue();
-			normal = new Vector(-h, 0.0, r);
-		}
+		double h = values.get(k+3).doubleValue() - values.get(k+1).doubleValue();
+		double r = values.get(k+2).doubleValue() - values.get(k+0).doubleValue();
+		normal = new Vector(r, 0.0, h);
 
 		normal = normal.normalize();
 		normal = normal.rotate(new Vector(0.0, 0.0, 1.0), phi);
